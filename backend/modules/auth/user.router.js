@@ -3,9 +3,11 @@ const authRouter = express.Router();
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const User = require("./user.model");
+const { validateSignup, validateSignin } = require("./user.validate");
+const validateRequest = require("../../middleware/validateRequest");
 
 
-authRouter.post("/signup", async (req, res) => {
+authRouter.post("/signup", validateSignup, validateRequest, async (req, res) => {
     const { email, phone, name, password, role } = req.body;
 
     const hash = await bcrypt.hash(password, 8);
@@ -30,7 +32,7 @@ authRouter.post("/signup", async (req, res) => {
     });
 });
 
-authRouter.post("/signin", async (req, res) => {
+authRouter.post("/signin", validateSignin, validateRequest, async (req, res) => {
     const { email, password } = req.body;
 
     const user = await User.findOne({ email: email });
