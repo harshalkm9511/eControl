@@ -6,14 +6,15 @@ const signin = () => {
 
     const submitLogin = async (event) => {
         event.preventDefault();
-        console.log(event.target);
         const result = await axios.post("http://localhost:3000/api/auth/signin",
             {
                 email: event.target[0].value,
                 password: event.target[1].value,
             }
         );
-        console.log(result);
+        if(result.data.role ==="warkari"){
+            navigate("/warkari");
+        }
     }
 
      const register = ()=>{

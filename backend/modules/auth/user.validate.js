@@ -41,7 +41,8 @@ const validateSignup = [
             "food",
             "sanitation",
             "accomudation",
-            "volunteer"
+            "volunteer",
+            "warkari"
         ])
         .withMessage("Invalid category")
 

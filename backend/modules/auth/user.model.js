@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    service_role:["police", "temple", "medical", "water", "food", "sanitation", "accomudation", "volunteer"]
+    service_role:["police", "temple", "medical", "water", "food", "sanitation", "accomudation", "volunteer", "warkari"]
 });
 
 const User = mongoose.model("User", userSchema);

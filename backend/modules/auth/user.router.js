@@ -8,7 +8,7 @@ const validateRequest = require("../../middleware/validateRequest");
 
 
 authRouter.post("/signup", validateSignup, validateRequest, async (req, res) => {
-    const { email, phone, name, password, role } = req.body;
+    const { email, phone, name, password, service_role } = req.body;
 
     const hash = await bcrypt.hash(password, 8);
 
@@ -17,18 +17,20 @@ authRouter.post("/signup", validateSignup, validateRequest, async (req, res) => 
         phone,
         name,
         password: hash,
-        service_role: role
+        service_role: service_role
     });
 
     const token = jwt.sign(
-        { email, role },
+        { email, service_role },
         process.env.SECRET_KEY,
         { expiresIn: "7d" }
     );
 
     res.status(200).json({
         message: "signup success",
-        token
+        token,
+        name:user.name,
+        role:user.service_role[0]
     });
 });
 
@@ -48,10 +50,12 @@ authRouter.post("/signin", validateSignin, validateRequest, async (req, res) => 
         process.env.SECRET_KEY,
         { expiresIn: "7d" }
     );
-
+    console.log(user);
     res.status(200).json({
         message: "login success",
-        token
+        token,
+        name:user.name,
+        role:user.service_role[0]
     });
 });
 

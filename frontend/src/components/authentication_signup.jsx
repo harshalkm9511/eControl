@@ -1,7 +1,6 @@
 import axios from "axios"
 import {useNavigate} from "react-router"
 
-
 const signup = () => {
     const navigate = useNavigate();
     const submitSignup = async (event) => {
@@ -15,12 +14,14 @@ const signup = () => {
                 service_role: event.target[4].value
             }
         );
+        if(result.data.role ==="warkari"){
+            navigate("/warkari");
+        }
     }
 
     const login = ()=>{
         navigate("/signin");
     }
-
 
     return (
         <div>
