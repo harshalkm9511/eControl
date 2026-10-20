@@ -1,6 +1,8 @@
 const express = require("express");
+const cors = require("cors");
 const app = require("./server");
 
+app.use(cors());
 const authRouter = require("./modules/auth/user.router"); 
 
 app.use(express.urlencoded({extended:true}));

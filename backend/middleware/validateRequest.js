@@ -1,7 +1,7 @@
-const { validateResult } = require("express-validator");
+const { validationResult } = require("express-validator");
 
 module.exports = async (req, res, next)=>{
-    const err = await validateResult(res);
+    const err = await validationResult(req);
 
     if(!err.isEmpty()){
         return res.status(400).json({
