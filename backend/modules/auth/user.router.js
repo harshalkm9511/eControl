@@ -50,7 +50,6 @@ authRouter.post("/signin", validateSignin, validateRequest, async (req, res) => 
         process.env.SECRET_KEY,
         { expiresIn: "7d" }
     );
-    console.log(user);
     res.status(200).json({
         message: "login success",
         token,
