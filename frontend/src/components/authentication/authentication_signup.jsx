@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useNavigate } from "react-router"
 import "../layout/warkari.css"
+import "./authentication.css"
 
 const signup = () => {
     const navigate = useNavigate();
@@ -25,9 +26,9 @@ const signup = () => {
     }
 
     return (
-        <div>
+        <div className="form-container">
             <form onSubmit={submitSignup}>
-                <h1>Register to eControl</h1>
+                
                 <label htmlFor="email">Email: </label>
                 <input type="email" name="email" id="email" />
                 <label htmlFor="phone">Mobile no. </label>
@@ -38,15 +39,15 @@ const signup = () => {
                 <input type="password" name="password" id="password" />
                 <label htmlFor="service_role">What's your role ?</label>
                 <select name="service_role" id="service_role">
-                    <option value="temple">Temple</option>
-                    <option value="police">Police</option>
-                    <option value="medical">Medical</option>
-                    <option value="water">Water</option>
-                    <option value="food">Food</option>
-                    <option value="sanitation">Sanitation</option>
-                    <option value="accomudation">Accomudation</option>
-                    <option value="volunteer">Volunteer</option>
-                    <option value="warkari">Warkari</option>
+                    <option value="temple">&nbsp;&nbsp;Temple</option>
+                    <option value="police">&nbsp;&nbsp;Police</option>
+                    <option value="medical">&nbsp;&nbsp;Medical</option>
+                    <option value="water">&nbsp;&nbsp;Water</option>
+                    <option value="food">&nbsp;&nbsp;Food</option>
+                    <option value="sanitation">&nbsp;&nbsp;Sanitation</option>
+                    <option value="accomudation">&nbsp;&nbsp;Accomudation</option>
+                    <option value="volunteer">&nbsp;&nbsp;Volunteer</option>
+                    <option value="warkari">&nbsp;&nbsp;Warkari</option>
                 </select>
 
                 <button type="submit">Register</button>

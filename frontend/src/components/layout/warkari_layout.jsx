@@ -40,14 +40,19 @@ export default () => {
         <div className="warkari-page">
 
             {topNav()}
-
+            <br />
             <div className="main">
+                <h1>Welcome</h1>
+                <p>Register to eControl</p>
+            </div>
+
+            <div className="tabs">
                 <div className="main-content">
                     <Outlet />
-                    {currPath}
                 </div>
 
             </div>
+
             {currPath === "/warkari" ||
                 currPath === "/warkari/notification" ||
                 currPath === "/warkari/services" ||

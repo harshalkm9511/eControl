@@ -1,0 +1,73 @@
+
+.main {
+    justify-items: center;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top: 30px;
+    bottom: 0px;
+}
+
+.main p{
+    font-size: 15px;
+}
+
+.main h1, p{
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.521);
+}
+
+/* .main h1{
+    font-size: 70px;
+} */
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center;
+    align-items: center;     */
+}
+
+form input {
+    width: 300px;
+    height: 30px;
+    border-radius: 18px;
+    border: none;
+    background-color: rgba(223, 247, 226, 1);
+    position: relative;
+    left: 220px;
+    margin-bottom: 15px;
+}
+
+form label{
+    position: relative;
+    left: 230px;
+    margin-bottom: 3px;
+}
+
+form select{
+    width: 200px;
+    position: relative;
+    left: 220px;
+    border-radius: 15px;
+    border: none !important;
+    background-color: rgba(223, 247, 226, 1);
+    height: 30px;   
+    width: 300px;
+}
+form button{
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    border: none !important;
+    background-color: rgba(0, 208, 158, 1);
+    margin-top: 10px ;
+    position: relative;
+    left: 300px;
+}
+
+
+@media (min-width:600px) {
+    .main h1 {
+        font-size: 55px;
+    }
+}
