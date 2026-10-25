@@ -1,8 +1,8 @@
-import "./warkari.css"
+import "../warkari.css"
 import { NavLink } from "react-router"
 
 const items = [
-    { to: "/warkari/home", icon: "fa-regular fa-house home", label: "Home", id: "home", end: true },
+    { to: "/warkari", icon: "fa-regular fa-house home", label: "Home", id: "home", end: true },
     { to: "/warkari/services", icon: "fa-solid fa-layer-group services", label: "Services", id: "services" },
     { to: "/warkari/emergency", icon: "fa-solid fa-phone emergency", label: "Emergence", id: "emergency" },
     { to: "/warkari/map", icon: "fa-solid fa-map-location-dot map", label: "Map", id: "map" },

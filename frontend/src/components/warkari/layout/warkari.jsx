@@ -1,5 +1,5 @@
     import "./warkari.css"
-    import BottomNav from "./botton-nav"
+    import BottomNav from "../../layout/navbars/navbar.botton-nav"
     import {Outlet} from "react-router";
     export default () => {
         

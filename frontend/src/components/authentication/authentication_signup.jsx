@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useNavigate } from "react-router"
-import "../warkari/layout/warkari.css"
+import "../layout/warkari.css"
 
 const signup = () => {
     const navigate = useNavigate();
@@ -26,54 +26,32 @@ const signup = () => {
 
     return (
         <div>
+            <form onSubmit={submitSignup}>
+                <h1>Register to eControl</h1>
+                <label htmlFor="email">Email: </label>
+                <input type="email" name="email" id="email" />
+                <label htmlFor="phone">Mobile no. </label>
+                <input type="number" name="phone" id="phone" />
+                <label htmlFor="name">Full Name: </label>
+                <input type="text" name="name" id="name" />
+                <label htmlFor="password">Password: </label>
+                <input type="password" name="password" id="password" />
+                <label htmlFor="service_role">What's your role ?</label>
+                <select name="service_role" id="service_role">
+                    <option value="temple">Temple</option>
+                    <option value="police">Police</option>
+                    <option value="medical">Medical</option>
+                    <option value="water">Water</option>
+                    <option value="food">Food</option>
+                    <option value="sanitation">Sanitation</option>
+                    <option value="accomudation">Accomudation</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="warkari">Warkari</option>
+                </select>
 
-            <div className="warkari-page">
-
-                <div className="top-navbar">
-                    <div className="language-toggle">
-                        <h3>Hi, Welcome to eControl</h3>
-                        <p>Good morning</p>
-                    </div>
-                    <div className="profile">
-                        <i class="fa-regular fa-circle-user"></i>
-                    </div>
-                </div>
-
-                <div className="main">
-                    <div className="main-content">
-                        <form onSubmit={submitSignup}>
-                            <h1>Register to eControl</h1>
-                            <label htmlFor="email">Email: </label>
-                            <input type="email" name="email" id="email" />
-                            <label htmlFor="phone">Mobile no. </label>
-                            <input type="number" name="phone" id="phone" />
-                            <label htmlFor="name">Full Name: </label>
-                            <input type="text" name="name" id="name" />
-                            <label htmlFor="password">Password: </label>
-                            <input type="password" name="password" id="password" />
-                            <label htmlFor="service_role">What's your role ?</label>
-                            <select name="service_role" id="service_role">
-                                <option value="temple">Temple</option>
-                                <option value="police">Police</option>
-                                <option value="medical">Medical</option>
-                                <option value="water">Water</option>
-                                <option value="food">Food</option>
-                                <option value="sanitation">Sanitation</option>
-                                <option value="accomudation">Accomudation</option>
-                                <option value="volunteer">Volunteer</option>
-                                <option value="warkari">Warkari</option>
-                            </select>
-
-                            <button type="submit">Register</button>
-                            <button type="button" onClick={login}>Login</button>
-
-                        </form>
-                    </div>
-
-                </div>
-
-            </div>
-
+                <button type="submit">Register</button>
+                <button type="button" onClick={login}>Login</button>
+            </form>
         </div>
     );
 }
