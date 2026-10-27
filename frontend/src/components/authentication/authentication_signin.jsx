@@ -24,13 +24,12 @@ const signin = () => {
     }
 
     return (
-        <div>
+        <div className="form-container">
             <form onSubmit={submitLogin}>
-                <h1>Login to eControl</h1>
                 <label htmlFor="email">Email: </label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" placeholder="   example@gmail.com" />
                 <label htmlFor="password">password: </label>
-                <input type="password" name="password" id="password" />
+                <input type="password" name="password" id="password" placeholder="    &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull;"/>
                 <button type="submit">Login</button>
                 <button type="button" onClick={register}>Register</button>
             </form>

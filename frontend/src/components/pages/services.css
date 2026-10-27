@@ -1,0 +1,11 @@
+.container-services{
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 3;
+}
+
+.container-services .tab {
+    background-color: bisque;
+    height: 70px;
+    width: 70px;
+}

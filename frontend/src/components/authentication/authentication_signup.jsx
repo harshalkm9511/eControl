@@ -30,24 +30,24 @@ const signup = () => {
             <form onSubmit={submitSignup}>
                 
                 <label htmlFor="email">Email: </label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" />
                 <label htmlFor="phone">Mobile no. </label>
-                <input type="number" name="phone" id="phone" />
+                <input type="number" name="phone" id="phone" placeholder="+ 951 1989 314" />
                 <label htmlFor="name">Full Name: </label>
-                <input type="text" name="name" id="name" />
+                <input type="text" name="name" id="name" placeholder="Alice" />
                 <label htmlFor="password">Password: </label>
-                <input type="password" name="password" id="password" />
+                <input type="password" name="password" id="password" placeholder="&bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull;"/>
                 <label htmlFor="service_role">What's your role ?</label>
                 <select name="service_role" id="service_role">
-                    <option value="temple">&nbsp;&nbsp;Temple</option>
-                    <option value="police">&nbsp;&nbsp;Police</option>
-                    <option value="medical">&nbsp;&nbsp;Medical</option>
-                    <option value="water">&nbsp;&nbsp;Water</option>
-                    <option value="food">&nbsp;&nbsp;Food</option>
-                    <option value="sanitation">&nbsp;&nbsp;Sanitation</option>
-                    <option value="accomudation">&nbsp;&nbsp;Accomudation</option>
-                    <option value="volunteer">&nbsp;&nbsp;Volunteer</option>
-                    <option value="warkari">&nbsp;&nbsp;Warkari</option>
+                    <option value="temple">Temple</option>
+                    <option value="police">Police</option>
+                    <option value="medical">Medical</option>
+                    <option value="water">Water</option>
+                    <option value="food">Food</option>
+                    <option value="sanitation">Sanitation</option>
+                    <option value="accomudation">Accomudation</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="warkari">Warkari</option>
                 </select>
 
                 <button type="submit">Register</button>

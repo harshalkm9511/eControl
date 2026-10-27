@@ -41,10 +41,10 @@ export default () => {
 
             {topNav()}
             <br />
-            <div className="main">
+            {/* <div className="main">
                 <h1>Welcome</h1>
                 <p>Register to eControl</p>
-            </div>
+            </div> */}
 
             <div className="tabs">
                 <div className="main-content">
