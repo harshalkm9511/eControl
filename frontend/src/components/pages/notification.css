@@ -1,0 +1,106 @@
+.scroll-container {
+    height: min(650px, 75vh);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.scroll-container:hover {
+    scrollbar-color: gray transparent;
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 3px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.scroll-container:hover::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Notification content */
+.content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 70px;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+.content .main-content {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.content .main-content h3 {
+    margin: 0 !important;
+}
+
+.content .main-content p {
+    margin: 12px 0px 0px 0px !important;
+}
+
+/* Notification icon */
+.content .icon {
+    height: 50px;
+    width: 50px;
+    flex-shrink: 0;
+    background-color: rgba(0, 208, 158, 1);
+    color: rgba(9, 48, 48, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    font-size: 23px;
+}
+
+/* Notification date */
+.notification #notification-date {
+    margin: 5px 0 10px !important;
+    color: rgba(0, 104, 255, 1);
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+/* Divider */
+.notification hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 208, 158, 1);
+    margin: 10px 0;
+}
+
+/* Tablet and desktop */
+@media (min-width: 600px) {
+    .scroll-container {
+        height: min(570px, 75vh);
+    }
+
+    .content {
+        gap: 16px;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 360px) {
+    .content .icon {
+        height: 42px;
+        width: 42px;
+        border-radius: 14px;
+        font-size: 20px;
+    }
+
+    .content {
+        gap: 8px;
+    }
+}

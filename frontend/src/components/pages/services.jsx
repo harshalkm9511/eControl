@@ -29,7 +29,7 @@ export default () => {
                 <div className="tab-icon">
                     <i className="fa-solid fa-bed"></i>
                 </div>
-                <span>Accommodation</span>
+                <span>Stay</span>
             </div>
 
             <div className="tab">
@@ -50,7 +50,7 @@ export default () => {
                 <div className="tab-icon">
                     <i className="fa-solid fa-bus"></i>
                 </div>
-                <span>Transportation</span>
+                <span>Travel</span>
             </div>
 
         </div>

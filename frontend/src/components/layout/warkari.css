@@ -50,7 +50,6 @@ body {
     bottom: 0px;
 }
 
-
 .navbar-icons {
     margin: 20px 0px !important;
     display: flex;
@@ -92,8 +91,6 @@ body {
     margin-bottom: -11px;
     
 }
-
-
 
 .navbar-icons a{
     text-decoration: none; 
