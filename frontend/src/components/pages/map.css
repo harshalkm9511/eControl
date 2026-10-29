@@ -1,0 +1,38 @@
+/* #map {
+    height: 600px;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.326);
+} */
+
+#map .filters {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 10;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.tabs {
+    height: 650px !important;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.326);
+}
+
+.main-content {
+    margin: 0px !important;
+}

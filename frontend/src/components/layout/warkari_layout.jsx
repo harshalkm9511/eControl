@@ -46,11 +46,10 @@ export default () => {
                 <p>Register to eControl</p>
             </div> */}
 
-            <div className="tabs">
+            <div className="tabs" id="tabs">
                 <div className="main-content">
                     <Outlet />
                 </div>
-
             </div>
 
             {currPath === "/warkari" ||
