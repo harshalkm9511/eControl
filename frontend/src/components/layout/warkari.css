@@ -1,74 +1,116 @@
+
+/* Global styling */
+* {
+    box-sizing: border-box;
+}
+
+html,
 body {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
     background-color: rgb(0, 208, 160);
 }
 
+/* Main layout */
+.warkari-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Top navbar */
 .top-navbar {
     display: flex;
-    margin: 10px 20px;
+    margin: 10px auto;
     justify-content: space-between;
+    width: calc(100% - 40px);
+    max-width: 800px;
 }
 
 .profile {
-    margin: 25px 0px;
+    margin: 25px 0;
     font-size: 25px;
 }
 
-.top-navbar .profile, h3, p{
+.top-navbar .profile,
+h3,
+p {
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.532);
 }
 
+/* Main block */
+/* .main-block {
+    width: calc(100% - 40px);
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+} */
 
+/* Tabs container */
 .tabs {
     height: fit-content !important;
     background-color: rgba(241, 255, 243, 1);
     position: fixed;
     width: 100%;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.215);
     padding-bottom: 20px;
-    /* border-bottom-right-radius: 100px;
-    border-bottom-left-radius: 100px; */
 }
 
+/* Main content inside tabs */
 .main-content {
     margin: 40px 20px;
 }
 
+/* Bottom navbar */
 .bottom-navbar {
     height: 90px;
     width: 100%;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     background-color: rgba(223, 247, 226, 1);
-    position:fixed;
-    left: 0px;
-    right: 0px;
-    margin: 0px auto;
-    bottom: 0px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    margin: 0 auto;
 }
 
+/* Navbar icons container */
 .navbar-icons {
-    margin: 20px 0px !important;
+    margin: 20px 0 !important;
     display: flex;
-    gap:10px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
 
+/* Icon and label */
 .icn-label {
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.icn-label label{
+
+.icn-label label {
     font-size: 10px;
 }
 
+/* Individual navbar item */
 .navbar-item {
     width: 60px;
     height: 60px;
@@ -77,73 +119,58 @@ body {
     justify-content: center;
     box-sizing: border-box;
 }
+
+/* Active navbar item */
 .navbar-item.active {
-  color: black;
-  background-color: rgb(0, 208, 160);
-  border-radius: 10px;
-  
+    color: black;
+    background-color: rgb(0, 208, 160);
+    border-radius: 10px;
 }
 
+/* Navbar icons */
 .navbar-icons i {
     font-size: 25px;
     opacity: 0.7;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.333);
     margin-bottom: -11px;
-    
 }
 
-.navbar-icons a{
-    text-decoration: none; 
-    color:black
+.navbar-icons a {
+    text-decoration: none;
+    color: black;
 }
 
+/* Material symbols */
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
         'wght' 400,
         'GRAD' 0,
-        'opsz' 24
+        'opsz' 24;
 }
 
-@media (min-width:600px) {
+/* Desktop responsiveness */
+@media (min-width: 600px) {
+
     .tabs {
         height: 450px;
-        background-color: rgba(241, 255, 243, 1);
-        position: fixed;
         width: 800px;
-        bottom: 0px;
-        border-top-right-radius: 50px;
-        border-top-left-radius: 50px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .bottom-navbar {
         height: 90px;
         width: 800px;
-        border-top-right-radius: 50px;
-        border-top-left-radius: 50px;
-        background-color: rgba(223, 247, 226, 1);
-        position: fixed;
-        bottom: 0px;
-
     }
 
     .navbar-icons {
-        margin: 30px 0px;
-        display: flex;
+        margin: 30px 0 !important;
         gap: 50px;
-        justify-content: center;
-        align-items: center;
     }
 
     .top-navbar {
-        display: flex;
-        margin: 10px 20px;
-        justify-content: space-between;
         width: 800px;
     }
 
-    .warkari-page {
-        display: flex;
-        justify-content: center;
-    }
 }

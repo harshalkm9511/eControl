@@ -8,6 +8,8 @@ import NavServices from "./navbars/navbar.servies"
 import NavMap from "./navbars/navbar.map"
 import NavNotification from "./navbars/navbar.notification"
 import NavEmergency from "./navbars/navbar.emregency"
+import Map from "../../utils/create-Map"
+
 
 export default () => {
     const location = useLocation();
@@ -41,10 +43,10 @@ export default () => {
 
             {topNav()}
             <br />
-            {/* <div className="main">
-                <h1>Welcome</h1>
-                <p>Register to eControl</p>
-            </div> */}
+
+            <div className="main-block" id="main-block">
+                {currPath === "/warkari/map" && <Map/>}
+            </div>
 
             <div className="tabs" id="tabs">
                 <div className="main-content">
