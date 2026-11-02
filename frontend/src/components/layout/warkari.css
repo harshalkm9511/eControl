@@ -32,8 +32,11 @@ body {
     display: flex;
     margin: 10px auto;
     justify-content: space-between;
+    align-items: center;
     width: calc(100% - 40px);
     max-width: 800px;
+    height: 40px !important;
+    margin-top: 20px !important;
 }
 
 .profile {
@@ -171,6 +174,7 @@ p {
 
     .top-navbar {
         width: 800px;
+        margin-top: 30px !important;
     }
 
 }

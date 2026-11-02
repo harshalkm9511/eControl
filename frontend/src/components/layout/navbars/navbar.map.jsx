@@ -2,7 +2,7 @@ export default () => {
     return (
         <div className="top-navbar">
             <div className="language-toggle">
-                <h1>Map</h1>
+                <p style={{fontSize:"20px"}}>Map</p>
             </div>
             <div className="profile">
                 <i class="fa-regular fa-circle-user"></i>
