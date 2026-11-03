@@ -1,4 +1,3 @@
-
 /* Global styling */
 * {
     box-sizing: border-box;
@@ -165,16 +164,17 @@ p {
     .bottom-navbar {
         height: 90px;
         width: 800px;
+        
     }
 
     .navbar-icons {
-        margin: 30px 0 !important;
+        margin: 20px 0 !important;
         gap: 50px;
     }
 
     .top-navbar {
         width: 800px;
         margin-top: 30px !important;
-    }
+    }   
 
 }
