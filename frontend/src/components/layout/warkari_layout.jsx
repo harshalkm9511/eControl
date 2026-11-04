@@ -9,6 +9,7 @@ import NavMap from "./navbars/navbar.map"
 import NavNotification from "./navbars/navbar.notification"
 import NavEmergency from "./navbars/navbar.emregency"
 import Map from "../../utils/create-Map"
+import EmergencyCards from "./emergency-cards"
 
 
 export default () => {
@@ -46,6 +47,7 @@ export default () => {
 
             <div className="main-block" id="main-block">
                 {currPath === "/warkari/map" && <Map/>}
+                {currPath === "/warkari/emergency" && <EmergencyCards/>}
             </div>
 
             <div className="tabs" id="tabs">

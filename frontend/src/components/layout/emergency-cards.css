@@ -1,0 +1,101 @@
+.emergency-cards-container {
+    height: 230px;
+    width: 370px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(223, 247, 226, 1);
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.384);
+}
+
+.emergency-cards-container hr {
+    background-color: black;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.emergency-cards-container .police,
+.medical {
+    /* border: 2px solid black; */
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.emergency-cards-container .police i {
+    font-size: 25px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.326);
+}
+
+.emergency-cards-container .medical i {
+    font-size: 25px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.349);
+}
+
+.emergency-cards-container .police button {
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 15px;
+    background-color: #059874;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.217);
+}
+
+.emergency-cards-container .medical button {
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 15px;
+    background-color: #059874;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.212);
+}
+
+.emergency-cards-container .btn {
+    font-size: 15px !important;
+}
+
+@media (min-width: 600px) {
+    .emergency-cards-container {
+        height: 130px;
+        width: 750px;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: rgba(12, 78, 19, 0);
+        padding: 10px;
+        border-radius: 16px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
+
+    }
+
+    .emergency-cards-container hr {
+        display: none;
+    }
+
+    .emergency-cards-container .police,
+    .medical {
+        /* border: 2px solid black; */
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+         background-color: rgba(223, 247, 226, 1);
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.384);
+    }
+}
