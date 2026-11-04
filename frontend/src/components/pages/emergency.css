@@ -1,0 +1,7 @@
+.emergency-page-container{
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
