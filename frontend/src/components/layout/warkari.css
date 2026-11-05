@@ -162,13 +162,12 @@ p {
     }
 
     .bottom-navbar {
-        height: 90px;
+        height: 80px;
         width: 800px;
-        
     }
 
     .navbar-icons {
-        margin: 20px 0 !important;
+        margin: 12px 0 !important;
         gap: 50px;
     }
 
