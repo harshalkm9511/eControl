@@ -14,10 +14,13 @@ export default () => {
                     <option value="lostPerson">Lost Person (100)</option>
                     <option value="notSure">Not Sure</option>
                 </select>
-                <button>Call</button>
+                <button>
+                    <i class="fa-solid fa-phone-volume"></i>
+                    Call (112)
+                </button>
             </div>
 
-            <div className="circular-sos">
+            <div className="circular-sos" id="circular-sos">
                 <p>SOS</p>
             </div>
 

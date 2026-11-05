@@ -1,7 +1,161 @@
-.emergency-page-container{
-    height: 380px;
+.emergency-page-container {
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.select-call-buttons p {
+    font-size: 18px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.413);
+    margin: 0px 0px 10px 0px;
+}
+
+.select-call-buttons select {
+    margin-right: 50px;
+    width: 160px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 2px solid green;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.244);
+}
+
+.select-call-buttons button {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #059874;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.244);
+}
+
+.select-call-buttons button i {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.emergency-page-container .circular-sos {
+    background-color: #e24b4a;
+    height: 30%;
+    width: 60%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.295);
+    transition: box-shadow 0.2s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#circular-sos:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.603);
+}
+
+
+.emergency-page-container .circular-sos p {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(241, 255, 243, 1);
+}
+
+.emergency-page-container .other-details-textarea textarea {
+    background-color: white;
+    height: 70px;
+    width: 340px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.292);
+    padding: 10px;
+    border: 2px solid green;
+    margin: 10px 0px;
+}
+
+.emergency-page-container .other-details-textarea label {
+    font-size: 17px;
+}
+
+@media (min-width: 600px) {
+    .emergency-page-container {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        align-items: center;
+    }
+
+    .select-call-buttons p {
+        font-size: 18px;
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.413);
+        margin: 0px 0px 10px 0px;
+    }
+
+    .select-call-buttons select {
+        width: 200px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 15px;
+        margin-right: 100px;
+        border: 2px solid green;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.244);
+    }
+
+    .select-call-buttons button {
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 15px;
+        border: none;
+        background-color: #059874;
+        color: white;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.244);
+    }
+
+    .select-call-buttons button i {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .emergency-page-container .circular-sos {
+        background-color: #e24b4a;
+        height: 30%;
+        width: 30%;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.295);
+        transition: box-shadow 0.2s ease-in-out, transform 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .emergency-page-container .circular-sos p {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgba(241, 255, 243, 1);
+
+    }
+
+    .emergency-page-container .other-details-textarea textarea {
+        background-color: white;
+        height: 70px;
+        width: 450px;
+        ;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.292);
+        padding: 10px;
+        border: 2px solid green;
+        margin: 10px 0px;
+    }
+
+    .emergency-page-container .other-details-textarea label {
+        font-size: 17px;
+    }
+
+    #circular-sos:hover {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.603);
+    }
+
 }
