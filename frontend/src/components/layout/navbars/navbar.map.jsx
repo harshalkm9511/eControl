@@ -5,7 +5,7 @@ export default () => {
         <div className="top-navbar">
             <BackBtn/>
             <div className="language-toggle">
-                <p style={{fontSize:"20px"}}>Map</p>
+                <h2>Map</h2>
             </div>
             <div className="profile">
                 <i class="fa-regular fa-circle-user"></i>

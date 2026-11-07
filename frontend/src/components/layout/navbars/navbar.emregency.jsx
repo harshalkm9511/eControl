@@ -5,7 +5,7 @@ export default () => {
         <div className="top-navbar">
             <BackBtn/>
             <div className="language-toggle">
-                <h1>Emergency</h1>
+                <h2>Emergency</h2>
             </div>
             <div className="profile">
                 <i class="fa-regular fa-circle-user"></i>

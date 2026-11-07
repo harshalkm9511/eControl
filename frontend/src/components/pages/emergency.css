@@ -21,6 +21,7 @@
     border-radius: 15px;
     border: 2px solid green;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.244);
+    background-color: #e2eff7fc ;
 }
 
 .select-call-buttons button {
@@ -28,7 +29,7 @@
     font-size: 20px;
     border-radius: 15px;
     border: none;
-    background-color: #059874;
+    background-color: #31957c;
     color: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.244);
 }
@@ -63,11 +64,11 @@
 }
 
 .emergency-page-container .other-details-textarea textarea {
-    background-color: white;
+    background-color: #e2eff7fc !important;
     height: 70px;
     width: 340px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.292);
+    border-radius: 15px;  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.292);
     padding: 10px;
     border: 2px solid green;
     margin: 10px 0px;
@@ -101,6 +102,7 @@
         margin-right: 100px;
         border: 2px solid green;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.244);
+        background-color: #e2eff7fc;
     }
 
     .select-call-buttons button {
@@ -108,7 +110,7 @@
         font-size: 20px;
         border-radius: 15px;
         border: none;
-        background-color: #059874;
+        background-color: #31957c;
         color: white;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.244);
     }
@@ -142,9 +144,9 @@
         background-color: white;
         height: 70px;
         width: 450px;
-        ;
+        
         border-radius: 15px;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.292);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.292);
         padding: 10px;
         border: 2px solid green;
         margin: 10px 0px;

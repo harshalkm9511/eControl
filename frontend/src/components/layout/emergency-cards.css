@@ -8,7 +8,7 @@
     align-items: center;
     gap: 10px;
     /* background-color: rgba(223, 247, 226, 1); */
-    background-color:rgba(241, 255, 243, 1);
+    background-color: rgba(241, 255, 243, 1);
     padding: 10px;
     border-radius: 16px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.384);
@@ -45,7 +45,7 @@
     font-size: 18px;
     padding: 6px 10px;
     border-radius: 15px;
-    background-color: #059874;
+    background-color: #31957c;
     color: white;
     border: none;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.217);
@@ -55,7 +55,7 @@
     font-size: 18px;
     padding: 6px 10px;
     border-radius: 15px;
-    background-color: #059874;
+    background-color: #31957c;
     color: white;
     border: none;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.212);
@@ -95,9 +95,17 @@
         justify-content: space-between;
         padding: 20px;
         align-items: center;
-         /* background-color: rgba(223, 247, 226, 1); */
-         background-color: white !important;
+        /* background-color: rgba(223, 247, 226, 1); */
+        background-color: white !important;
         border-radius: 15px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.384);
+    }
+
+    .emergency-cards-container .medical button {
+        background-color: #31957c !important;
+    }
+
+    .emergency-cards-container .police button {
+        background-color: #31957c !important;
     }
 }

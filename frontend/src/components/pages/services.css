@@ -25,14 +25,14 @@
     aspect-ratio: 1;
     flex-shrink: 0;
 
-    background-color: rgba(109, 182, 254, 1);
+    background-color: #8494FF;
     border-radius: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
     font-size: clamp(24px, 4vw, 30px);
-    color: rgba(109, 182, 254, 1);
+    color: #8494FF;
     box-shadow: 0 0 17px rgba(0, 0, 0, 0.228);
     -webkit-text-stroke: 1px white;
 }
@@ -57,14 +57,14 @@
         aspect-ratio: 1;
         flex-shrink: 0;
 
-        background-color: rgba(109, 182, 254, 1);
+        background-color: #8494FF;
         border-radius: 18px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 10px;
         font-size: clamp(24px, 4vw, 40px);
-        color: rgba(109, 182, 254, 1);
+        color: #8494FF;
         box-shadow: 0 0 17px rgba(0, 0, 0, 0.228);
         -webkit-text-stroke: 1px white;
     }

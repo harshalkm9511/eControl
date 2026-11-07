@@ -55,19 +55,22 @@
     height: 50px;
     width: 50px;
     flex-shrink: 0;
-    background-color: rgba(0, 208, 158, 1);
+    background-color: rgb(75, 191, 164);
     color: rgba(9, 48, 48, 1);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 18px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.263);
+    margin-left: 7px;
     font-size: 23px;
+
 }
 
 /* Notification date */
 .notification #notification-date {
     margin: 5px 0 10px !important;
-    color: rgba(0, 104, 255, 1);
+    color: #4C2365;
     text-align: right;
     overflow-wrap: anywhere;
 }
@@ -76,7 +79,7 @@
 .notification hr {
     border: none;
     height: 1px;
-    background-color: rgba(0, 208, 158, 1);
+    background-color: #C4A4DA;
     margin: 10px 0;
 }
 
@@ -98,6 +101,8 @@
         width: 42px;
         border-radius: 14px;
         font-size: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.263);
+        margin-left: 10px;  
     }
 
     .content {
